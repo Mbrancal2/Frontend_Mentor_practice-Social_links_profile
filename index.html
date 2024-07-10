@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+    :root {
+      --clr-Off-Black: hsl(0, 0%, 8%);
+      --clr-Grey: hsl(0, 0%, 20%);
+      --clr-Dark-Grey: hsl(0, 0%, 12%);
+      --clr-Off-Black: hsl(0, 0%, 8%);
+      --clr-Green: hsl(75, 94%, 57%);
+      --sz-Mobile: 375px;
+      --sz-Desktop: 1440px;
+      --font-inter: 'Inter';
+      --fw-regulat: 400;
+      --fw-bold: 600;
+      --fw-bolder: 700;
+    }
+    
+    body {
+      background-color: var(--clr-Off-Black);
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-family: var(--font-inter);
+      color: white;
+    }
+    * {
+      box-sizing: border-box;
+     
+    }
+    .outter-container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-width: 325px;
+      min-height: 520px;
+      border-radius: 15px;
+      background-color: var(--clr-Dark-Grey);
+    }
+    
+    .bio{
+      text-align: center;
+      position: relative;
+      top: 30px;
+      margin-bottom: 30px;
+    }
+    h3{
+      margin-top: -10px;
+      color: var(--clr-Green);
+    }
+
+    p{
+      color: hsl(0, 0%, 85%);
+    }
+
+    img{
+      border-radius: 100%;
+      width: 95px;
+      height: 95px;
+    }
+    button{
+      width: 250px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      color: white;
+      background-color: var(--clr-Grey);
+      border: none;
+      font-weight: var(--fw-bold);
+    }
+    button:hover{
+      background-color: var(--clr-Green);
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <div class="outter-container">
+    <div class="bio">
+      <img src="./assets/images/avatar-jessica.jpeg">
+      <h1>Jessica Randall</h1>
+      <h3>London, United Kingdom</h3>
+      <p class="user-bio">"Front-end developer and avid reader."</p>
+    </div>
+    <div>
+      <button  type="button">GitHub</button>
+      <button>frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+    
+  </div>
+</body>
+</html>
